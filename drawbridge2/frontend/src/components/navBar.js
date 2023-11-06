@@ -2,6 +2,8 @@ import React from 'react';
 
 import Logout from './logout';
 
+import { useAuth } from '../components/authContext';
+
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
@@ -20,7 +22,7 @@ const NavBar = () => {
                     <a className="nav-link" href="/user">User Info</a>
                 </li>
                 <li className="nav-item">
-                    <Logout />
+                <a className="nav-link" href="/logout">Logout</a>
                 </li>
             </ul>
         </div>

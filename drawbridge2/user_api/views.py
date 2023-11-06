@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from .serializers import UserRegisterSerializer, UserLoginSerializer, UserSerializer
 from rest_framework import permissions, status
 from .validations import custom_validation, validate_email, validate_password
+from django.views.decorators.cache import never_cache
 
 
 class UserRegister(APIView):
@@ -40,7 +41,6 @@ class UserLogout(APIView):
 	authentication_classes = ()
 	def post(self, request):
 		logout(request)
-		print(request.session)
 		return Response(status=status.HTTP_200_OK)
 
 

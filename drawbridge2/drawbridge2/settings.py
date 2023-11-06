@@ -33,6 +33,22 @@ CORS_ALLOWED_ORIGINS = [
     'http://192.168.1.156:3000'
 ]
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = [
+    "DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT",
+]
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+SESSION_COOKIE_HTTPONLY = False
 
 
 # Application definition
