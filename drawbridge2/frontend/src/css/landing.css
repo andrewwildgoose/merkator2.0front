@@ -1,0 +1,40 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.centered h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.centered p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.cta button.get-started-button {
+    background-color: #02a8a0;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta button.get-started-button:hover {
+    background-color: #02bdb3;
+}
