@@ -17,7 +17,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div class="container-fluid">
+        <div class="container-fluid text-white">
           <NavBar />
           <Routes>
             <Route path='/register' element={<Registration />} />

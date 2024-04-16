@@ -27,14 +27,17 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
 }
 
 .rl-form button {
     background-color: #02a8a0;
     color: #fff;
     font-size: 1.25rem;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }

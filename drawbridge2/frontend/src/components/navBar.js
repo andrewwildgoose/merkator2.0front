@@ -4,10 +4,12 @@ import Logout from './logout';
 
 import { useAuth } from '../components/authContext';
 
+import '../css/navBar.css'
+
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
-        <div className="container-fluid">
+        <div className="container-fluid px-3">
             <ul className="navbar-nav">
                 <li className="nav-item">
                 <a className="nav-link" href="/">Home</a>
